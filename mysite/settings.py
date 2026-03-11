@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fc1b4k@dg^9n34z2bqo^uz@un7(bju_0p1fus%x+0*lw=v%t$8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -127,3 +127,5 @@ TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = [
     '127.0.0.1',
     ]
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
